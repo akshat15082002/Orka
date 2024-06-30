@@ -1,0 +1,14 @@
+#panel_div{
+    background-color:rgb(250, 250, 250)
+}
+div[data-resize-handle-state="hover"] div{
+    background-color: 	#d6d5d5 !important;
+}
+
+div[data-resize-handle-state="drag"] div{
+    background-color: #d6d5d5 !important;
+}
+
+/* *{
+    cursor:col-resize;
+} */

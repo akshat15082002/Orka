@@ -1,0 +1,43 @@
+.section-features{
+    display: flex;
+    margin-top: 8rem;
+    padding: 2rem;
+}
+
+
+.service-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+}
+
+
+.icon-box{
+    padding: 0.5rem 2rem;
+    background-color: rgb(222, 247, 255);
+    border: 2px solid #EBF4F6;
+    width: 28vw;
+    border-radius: 5px;
+    transition: all 2s linear;
+}
+
+.service-title{
+    color: #088395;
+    font-size: 3.8vw;
+    width: fit-content;
+    padding: 3px;
+    filter: drop-shadow(0 0 0.25rem #088395);
+    border-radius: 100%;
+}
+
+@media only screen and (max-width:510px){
+    .icon-box{
+        width: 49vw;
+        height: 28vh;
+    }
+    .section-features{
+        flex-direction: column;
+    }
+}

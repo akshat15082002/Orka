@@ -1,0 +1,34 @@
+.slider {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 2.5rem;
+	margin-top: 1rem;
+}
+.item {
+	animation: animate 25s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img
+	{
+		max-width: 200px;
+		padding: 0 50px;
+	}
+
+.slider:hover .item {
+	animation-play-state: paused;
+}
+
+@keyframes animate {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(-1800px, 0, 0);
+	}
+}
+

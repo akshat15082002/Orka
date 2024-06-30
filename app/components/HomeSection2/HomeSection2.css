@@ -1,0 +1,21 @@
+.second-heading{
+    margin-top: 5.2rem;
+    font-size: 1.8rem;
+    word-spacing: 6px;
+    font-weight: 100;
+    color: #071952;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.second-number{
+    font-size: 4rem;
+    color: #088395;
+    font-weight:bolder;
+}
+
+.divsec4imgcomp{
+    max-width: 400px;
+}

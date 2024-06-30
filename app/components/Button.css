@@ -1,0 +1,93 @@
+.container{
+    display: flex;
+    margin-top: 6rem;
+    justify-content: space-between;
+    color: #071952;
+}
+
+
+.btn {
+    width: 20rem;
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 12px 27px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #088395;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+}
+
+@media only screen and (max-width:200px) {
+    .btn{
+        width: 16rem;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    .btn{
+        width: 35rem;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .btn{
+        width: 40rem;
+        font-size: 20px;
+    }
+}
+
+.btn.btn-border-1::after,
+.btn.btn-border-1::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    visibility: hidden;
+}
+
+.btn.btn-border-1::after {
+    bottom: -3px;
+    right: -3px;
+    border-left: 3px solid #222222;
+    border-bottom: 3px solid #222222;
+    transition: width .1s ease .1s, height .1s ease, visibility 0s .2s;
+}
+
+.btn.btn-border-1::before {
+    top: -3px;
+    left: -3px;
+    border-top: 3px solid #222222;
+    border-right: 3px solid #222222;
+    transition: width .1s ease .3s, height .1s ease .2s, visibility 0s .4s;
+}
+
+.btn.btn-border-1:hover {
+    animation: pulse 1s ease-out .4s;
+    color: #1a73e8;
+    filter: drop-shadow(0 0 0.20rem #1a73e8);
+}
+
+.btn.btn-border-1:hover::after,
+.btn.btn-border-1:hover::before {
+    width: calc(100% + 3px);
+    height: calc(100% + 3px);
+    visibility: visible;
+    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+
+.btn.btn-border-1:hover::after {
+    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+
+.btn.btn-border-1:hover::before {
+    transition: width .1s ease, height .1s ease .1s;
+}
